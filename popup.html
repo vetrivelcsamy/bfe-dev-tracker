@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>BFE.dev Tracker</title>
+    <title>PMCA</title>
     <meta charset="utf-8">
     <link href="lib/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,10 +71,10 @@
         <!-- header -->
         <div style="display: flex;">
             <div class="my-3 mx-0 px-0 text-center" style="flex: 1;">
-                <p>BFE.dev</p>
+                <img src="assets/logo2.png" style="width: 100px;" />
             </div>
             <div class="mt-3 py-1" style="flex: 2;">
-                <h5 id="message">Practice Makes Code Accepted</h5>
+                <h5 id="message" style="font-family: 'Press Start 2P', cursive;">Practice Makes Code Accepted</h5>
                 <small style="font-family: 'Raleway', sans-serif;"><i>Review bfe.dev problems based on <b>Ebbinghaus's
                             Forgetting Curve!</b></i></small>
             </div>
@@ -84,23 +84,15 @@
         <div id="switch-area">
             <div class="form-check form-switch text-center justify-content-center my-3"
                 style="font-family: 'Press Start 2P', cursive; text-align: center; display: flex;">
-                <img src="assets/bfe_logo.png"  width="150px" />
-                &nbsp;	
-                <a class="col mb-0 ms-0" href="https://www.buymeacoffee.com/vetrivelcsamy" target="_blank">
-                    <button type="button" class="btn btn-outline-dark"
-                        style="font-size: smaller; font-family: 'Courier Prime', monospace;">Buy me a coffee</button>
-                </a>
-                &nbsp;	
-                <a class="col mb-0 ms-0" href="https://github.com/vetrivelcsamy/bfe-dev-tracker/issues/new" target="_blank">
-                    <button type="button" class="btn btn-outline-warning custom-btn"
-                        style="font-size: smaller; font-family: 'Courier Prime', monospace;">Request new features</button>
-                </a>
+                <input class="form-check-input custom-switch d-none" type="checkbox" role="switch" id="switchButton">
+                &nbsp;
+                <label class="form-check-label" for="flexSwitchCheckDefault" id="siteLabel"></label>
             </div>
         </div>
 
         <!-- navbar -->
         <ul class="nav nav-tabs text-center justify-content-center" id="myTab" role="tablist"
-            style="font-size: smaller;">
+            style="font-size: smaller; font-family: 'PT Mono', monospace;">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="need-review-tab" data-bs-toggle="tab"
                     data-bs-target="#need-review-pane" type="button" role="tab" aria-controls="need-review-pane"
@@ -164,11 +156,32 @@
 
 
         <!-- footer -->
+        <!-- star & donate -->
+        <div class="text-center mb-3 mt-3"
+            style="display: flex; align-items: center; justify-content: center; text-align: center; position:fixed; bottom: 0;">
+            <a class="col-6 mb-0 ms-0" href="https://github.com/vetrivelcsamy/bfe-dev-tracker/issues/new" target="_blank">
+                <button type="button" class="btn btn-outline-warning custom-btn"
+                    style="font-size: smaller; font-family: 'Courier Prime', monospace;">Request new features</button>
+            </a>
+            <div id="donateButton" class="col-2 mb-0 ms-0">
+                <a href="https://www.buymeacoffee.com/vetrivelcsamy" target="_blank">
+                    <img style="width: 125%;"
+                        src="https://img.buymeacoffee.com/button-api/?text=Donate&emoji=💰&slug=vetrivelcsamy&button_colour=ebad81&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- Modal -->
     <div class="modal fade" id="tipModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
         style="align-items: center;justify-content: center;">
-     
+        <div class="modal-dialog" style="display: flex; align-items: center;justify-content: center;">
+            <div class="modal-content">
+            </div>
+        </div>
     </div>
 
     <script type="text/javascript" src="lib/bootstrap.bundle.min.js"></script>
