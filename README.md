@@ -14,9 +14,12 @@
 
 # Get Started
 
-1. Install the PMCA extension in your web browser.
+1. Install the BFE.dev Tracker extension in your web browser.
 2. Solve and submit BFE.dev / bigfrontend.dev problems. Upon successful submission, BFE.dev tracker sets the next review time for the problem based on the Ebbinghaus forgetting curve.
-3. Open BFE.dev tracker to view problems that need to be reviewed now, problems scheduled for future review and mastered problems. You can use the switch in the popup page to switch between the LeetCode global site and the LeetCode CN site.
+3. Open BFE.dev tracker to view problems that need to be reviewed now, problems scheduled for future review and mastered problems.
 4. Enjoy coding!
 
-_Currently BFE.dev tracker __does not__ support tracking problem submission by `ctrl` + `Enter` Please refrain from using it now, thanks! (I will try to fix it soon (or not 🤡_. 
+
+# thank you
+
+[https://github.com/HaolinZhong/PMCA/](https://github.com/HaolinZhong/PMCA/)
