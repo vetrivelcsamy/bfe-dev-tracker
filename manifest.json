@@ -15,8 +15,10 @@
         "default_popup": "popup.html"
     },
     "background": {},
+    "host_permissions": [
+        "https://bigfrontend.dev/*"
+    ],
     "permissions": [
-        "https://bigfrontend.dev/*",
         "unlimitedStorage",
         "storage"
     ],
