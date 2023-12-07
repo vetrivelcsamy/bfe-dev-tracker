@@ -16,7 +16,7 @@
     },
     "background": {},
     "host_permissions": [
-        "https://bigfrontend.dev/"
+        "https://bigfrontend.dev/*"
     ],
     "permissions": [
         "unlimitedStorage",
