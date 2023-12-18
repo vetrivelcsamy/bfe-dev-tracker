@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "BFE.dev tracker",
-  "version": "0.9.4",
+  "version": "0.9.0",
   "author": "Vetrivel Chinnasamy",
   "description": "BFE.dev tracker tracks your BFE.dev/bigfrontend.dev and prompt you to review based on Ebbinghaus's Forgetting Curve",
   "homepage_url": "https://github.com/vetrivelcsamy/bfe-dev-tracker",
