@@ -69,13 +69,14 @@ const extractProblemInfo = async () => {
   );
   const item = QUESTION_INFO.props.pageProps.item;
   const permalink = QUESTION_INFO.query.permalink;
+  const PAGE_TYPE = QUESTION_INFO.page === "/problem/[permalink]" ? "problem" : "quiz"; // quiz or problem
 
   return {
     problemId: item.id,
     problemIndex: permalink,
     problemName: item.title,
     problemLevel: item.difficulty,
-    problemUrl: `https://bigfrontend.dev/problem/${permalink}`,
+    problemUrl: `https://bigfrontend.dev/${PAGE_TYPE}/${permalink}`,
   };
 };
 
@@ -92,7 +93,7 @@ const monitorSubmissionResult = async () => {
       return;
     }
 
-    const submissionResultSelector = 'p[class^="TestResultView__Success"]';
+    const submissionResultSelector = 'p[class^="TestResultView__Success"]' || 'p[class^="permalink__Success"]';
     const submissionResult = document.querySelector(submissionResultSelector);
 
     if (!submissionResult) {
@@ -101,9 +102,7 @@ const monitorSubmissionResult = async () => {
     }
 
     clearInterval(functionId);
-    const isSuccess = submissionResult.innerText.includes(
-      "👍 well done! all cases passed"
-    );
+    const isSuccess = submissionResult.innerText.includes("👍 well done! all cases passed" || "👍 well done! it passed");
 
     const submissionTime = Date.now();
     const { problemId, problemIndex, problemName, problemLevel, problemUrl } =
